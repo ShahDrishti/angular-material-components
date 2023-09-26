@@ -1,1 +1,31 @@
-<p>reactive-form works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+      <form [formGroup]="loginForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+        <input 
+        type="text"
+         id="name"
+         formControlName="name"
+         class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input 
+          type="text"
+          id="email"
+          formControlEmail="email">
+        </div>
+        
+
+
+      </form>
+
+    </div>
+  </div>
+</div>
+<label for="name">Name</label>
+
+
+

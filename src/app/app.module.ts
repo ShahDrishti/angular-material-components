@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { MaterialTableComponent } from './material-table/material-table.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatButtonModule,
     MatTableModule,
     MatFormFieldModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
