@@ -13,31 +13,25 @@
         <div class="form-group">
           <label for="email">Email</label>
           <input 
-          type="text"
-          id="email"
-          formControlName="email"
-          class="form-control">
-          <!-- <span 
-          *ngIf="!loginForm.get('userData.email').valid && loginForm.get('userData').touched">
-          Please Enter Valid Email!
-          </span> -->
+            type="text"
+            id="email"
+            formControlName="email"
+            class="form-control">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input 
-          type="password"
-          id="password"
-          formControlName="passwordControl"
-          class="form-control">
+            type="password"
+            id="password"
+            formControlName="password"
+            class="form-control">
         </div>
-        <span *ngIf="!loginForm.valid && loginForm.touched"
-        class="help-block">Please Enter Valid data!</span>
+        <!-- <span *ngIf="!loginForm.valid && loginForm.touched"
+        class="help-block">Please Enter Valid data!</span> -->
         <button type="submit" class="btn btn-success">Continue</button>
       </form>
-
     </div>
-  </div>
-</div>
+    
 
 
 

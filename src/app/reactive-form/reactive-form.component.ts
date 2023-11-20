@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl,FormGroup,Validators,FormBuilder } from '@angular/forms';
+import { FormControl,FormGroup,Validators } from '@angular/forms';
 
 
 @Component({
@@ -8,11 +8,11 @@ import { FormControl,FormGroup,Validators,FormBuilder } from '@angular/forms';
   styleUrls: ['./reactive-form.component.css']
 })
 export class ReactiveFormComponent implements OnInit {
-    loginForm: FormGroup = new FormGroup({
+    loginForm: FormGroup =  new FormGroup({
       userData :new FormGroup({
         name : new FormControl(
           null,
-          [Validators.required]),
+          Validators.required),
         email: new FormControl(
           null,
           [Validators.required, Validators.email],
@@ -23,7 +23,7 @@ export class ReactiveFormComponent implements OnInit {
           
       }),
     })
-    constructor(private fb: FormBuilder){}
+    constructor(){}
 
     ngOnInit(){
       this.loginForm.setValue({

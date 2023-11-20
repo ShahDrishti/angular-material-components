@@ -10,13 +10,15 @@ import { MaterialTableComponent } from './material-table/material-table.componen
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MaterialTableComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    HomeComponent
   ],
   imports: [ 
     BrowserModule,
